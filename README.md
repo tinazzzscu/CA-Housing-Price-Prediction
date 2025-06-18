@@ -80,11 +80,9 @@ CA-Housing-Price-Prediction/
 └── requirements.txt
 ```
 
-## Contributors
+## Learnings
+One of the key takeaways from this project is that we learned the importance of distinguishing between numerical features and categorical features. At first, we included zip codes in our selected features because we believe that zip codes can provide a more detailed idea about how location affects housing prices. However, later, we found that our model takes the zipcode column as a numerical feature. We had two options either transform the zipcode column to a categorical feature or use the city column instead. After our experiment, using the city column makes more improvement of the model performance. The second takeaway we learned is that we need to find a balance between correlation and null values. From our finding in the heatmap, column ‘HOA/MONTH’ has a higher correlation value to the price column compared to other columns. However, when we run code to check for null values, this column has 34777 null values, which means 73.8% of this column is empty. We decided not to put this column into our selected features since the sample size will be much smaller after dropping null values. The last takeaway is that even though tuning the parameters can be very time-consuming, it is vital in improving the model's performance. No parameters or model can suit all datasets.
 
-* Xinyu Zou
-* Zizhao Wang
-* Chuanting Zong
 
 ## References
 
